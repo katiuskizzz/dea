@@ -1,0 +1,9 @@
+h1{
+    font-size: 3em;
+}
+.tam-font-2em{
+    font-size: 2em; /*en "em" se pueden utilizar decimales*//*rem, pts o %*/
+}
+.tam-font-4em{
+    font-size: 4em; /*el punto para un nombre*/
+}/* alt + shift+ a para abreviar las notas aqui  */

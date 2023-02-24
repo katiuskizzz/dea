@@ -1,0 +1,11 @@
+
+    h2{
+        font-size:250px; /*Tamaño de la imagen*/
+        font-weight: 900; /*Grosor de la letra*/
+        font-style: italic;/*Estilos de letra*/
+        font-family: 'Gloock', serif;
+
+    }
+    h1{
+        font-style: italic;
+    }
