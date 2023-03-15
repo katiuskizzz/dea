@@ -1,0 +1,46 @@
+
+.box-style{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.box-1{
+   
+   background-color: rgb(243, 193, 128);
+   border: 7px solid rgb(199, 153, 55); /*margen sin rayas ni nada es una margen solida de una sola linea*/
+ 
+   
+}
+.box-2{
+    
+    background-color: rgb(216, 142, 142);
+    border: 7px dashed rgb(196, 78, 78); /*rayas de margen*/ 
+   
+}
+.box-3{
+ 
+    background-color: rgb(152, 120, 194);
+    border:7px dotted rgb(132, 44, 150); /*PUNTITOS de margen*/ 
+   
+
+}
+.box-4{
+    
+    background-color: rgba(162, 255, 143, 0.932);
+    border: 7px double #51fa5f; /*dos lineas de margen*/ 
+ 
+
+
+
+}
+body{
+    border: 20px dotted lightcoral;
+    width: 105em;
+    height: 50em;
+    background-color: rgb(240, 222, 222);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
