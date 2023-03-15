@@ -1,0 +1,157 @@
+
+.contenedor{
+   /* background-color: white; color de adentro del contenedor */
+    max-width: 600px; /*ancho maximo del contenedor*/
+    margin: 0 auto; /*con este codigo se puede centrar sin la necesidad del center en el html*/
+    padding: 0.1%; /*tamaño del contenedor*/
+    border: 1px solid black;
+    height: 90px;
+    background-color: #00000031;
+    
+
+}
+.contenedor2{
+    max-width: 700px; /*ancho maximo del contenedor*/
+    margin: 0 auto; /*con este codigo se puede centrar sin la necesidad del center en el html*/
+    padding: 105px; /*tamaño del contenedor*/
+    border: 1px solid black;
+    height: 180px;
+    background-color: #00000048;
+}
+ 
+.styleletra{
+    font-family:  'Gloock', serif;
+    font-weight: bold;
+    color: black;
+
+}
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/19/13/03/coffee-2242213_1280.jpg);
+
+    background-repeat: no-repeat; /*repite o no repite la imagen de fondo, la del body*/
+   
+    background-position: center; /*la centra*/
+    background-size: cover;
+   
+    
+    /*background-size: cover y background-attachment: fixed para que la imagen se adecue al tamñao de la pagina o pantalla  */
+    
+}
+
+
+ 
+        /*.img-container {
+    display: flex; /* Se usa flexbox para alinear las imágenes */
+   /* justify-content: center; /* Centrar las imágenes horizontalmente */
+  
+  
+ /* .img-container img {
+    width: 200px; /* Ancho de las imágenes */
+   /* height: 200px; /* Alto de las imágenes */
+   /* object-fit: cover; /* Escalar las imágenes para llenar su contenedor */
+   /* border-radius: 30%; /* Dar forma circular a las imágenes */
+   /* margin: 10px; /* Espacio entre las imágenes */
+  
+
+   .biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .imagen img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.75);
+  }
+  
+  .imagen h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .imagen p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+
+
+
+
+
+  .biografia-container {
+    max-width: 350px; /* ajusta el valor según el tamaño deseado */
+    margin: auto; /* centra el contenedor */
+  }
+
+
+
+
+
+.boton1 {
+    width: 100px; /*ancho y largo del boton (se expande de los lados)*/
+    height: 35px; /*largo del boton hacia abajo*/
+    list-style: none; /*para quitar el boton al inicio de los links*/
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px; /*aqui se establece el tamaño de fuente del boton*/
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 0, 0); /*el punto del boton */
+    background-color: #ffffff; /*color de fondo del boton */
+    border: none ; /*se le hace un color de border dependiendo de los siguientes datos, ejemplo [2px solid red] se utilizaria sin las comillas */
+    border-radius: 15px;  /*cambia las esquinas redondeandolo */
+
+    box-shadow: 0 9px #000000; /*sombra del boton*/
+    margin-right: 10px; /*separar los botones*/
+    
+
+    
+}
+.boton1:hover{
+    background-color: #b49e9e; /*la animacion, color que aparece al colocar el cursor en él*/
+
+}
+.boton1:active{
+    background-color: lightsalmon;
+    box-shadow: 0 5px black; /*sombra del boton¿*/
+    transform: translateY(4px);
+}
+.raya{
+    text-decoration: none;
+    font-family:  'Gloock', serif;
+    font-weight: bold;
+    color: black;
+    margin: 0 auto;
+    
+
+}
+.letras{
+    font-family:  'Gloock', serif;
+    font-weight:  normal; /*bajarle la negrilla normal en caso de querer la negrilla usar bold*/
+    color: black;
+    margin: 0 auto;
+    
+
+}
+.imagenusuario{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+.datos{
+   margin: 0 auto;
+   font-weight: bold;
+   font-size: 15px;
+}
