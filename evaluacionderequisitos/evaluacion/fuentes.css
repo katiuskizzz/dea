@@ -13,9 +13,9 @@
 .contenedor2{
     max-width: 700px; /*ancho maximo del contenedor*/
     margin: 0 auto; /*con este codigo se puede centrar sin la necesidad del center en el html*/
-    padding: 105px; /*tamaño del contenedor*/
+    padding: 90px; /*tamaño del contenedor*/
     border: 1px solid black;
-    height: 180px;
+    height: 170px;
     background-color: #00000048;
 }
  
@@ -99,10 +99,10 @@ body{
 
 .boton1 {
     width: 100px; /*ancho y largo del boton (se expande de los lados)*/
-    height: 35px; /*largo del boton hacia abajo*/
+    height: 403x; /*largo del boton hacia abajo*/
     list-style: none; /*para quitar el boton al inicio de los links*/
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 14px; /*aqui se establece el tamaño de fuente del boton*/
     cursor: pointer;
     text-align: center;
@@ -115,6 +115,8 @@ body{
 
     box-shadow: 0 9px #000000; /*sombra del boton*/
     margin-right: 10px; /*separar los botones*/
+    flex-wrap: wrap;
+    justify-content: center;
     
 
     
@@ -128,6 +130,8 @@ body{
     box-shadow: 0 5px black; /*sombra del boton¿*/
     transform: translateY(4px);
 }
+
+
 .raya{
     text-decoration: none;
     font-family:  'Gloock', serif;
@@ -140,7 +144,7 @@ body{
 .letras{
     font-family:  'Gloock', serif;
     font-weight:  normal; /*bajarle la negrilla normal en caso de querer la negrilla usar bold*/
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 0 auto;
     
 
