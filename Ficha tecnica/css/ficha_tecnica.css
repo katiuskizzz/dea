@@ -1,0 +1,32 @@
+body{
+    background: linear-gradient(237.2deg, rgb(170, 189, 208) 14.31%, rgb(218, 162, 162));
+    height: 100vh;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+    border-radius: 15px;
+    box-shadow: 0 3 rgb(104, 104, 211);
+    margin-right: 20px;
+    
+}
+input{
+    background-color: white;
+    color: black;
+    border: none;
+}
