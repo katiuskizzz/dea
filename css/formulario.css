@@ -1,25 +1,47 @@
 *{
     font-family: Tahoma, sans-serif;
 }
-.form-box{
+.main-box{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    
 }
-form {
+
+.content-box {
     border: 1px solid rgb(255, 0, 0);
     width: 600px;
 }
+.form-box{
+    
+    margin-top: 10px;
+    
+}
+form {
+    
+    width: 600px;
+    padding: 15px;
+}
 .form-tittle{
-    width: 602px;
+    
     height: 80px;
     color: white;
     background-color: rgb(255, 0, 0);
+    margin-top: 0;
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+
 }
 label{
     display: block;
 }
 input[type="text"]{
     display: block;
+    margin-bottom: 20px;
+}
+label {
+    margin-top: 20px;
+}
+input[type="submit"]{
+    margin-top: 20px;
 }
