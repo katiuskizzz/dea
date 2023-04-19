@@ -46,6 +46,20 @@ input[type="text"]{
 label {
     margin-top: 20px;
 }
+input[type="submit"]{
+   margin-top: 20px;
+   width: 480px;
+   margin-left: 42px;
+   margin-right: 20px;
+   background-color: dodgerblue;
+   line-height: 55px;
+   color: white;
+   font-size: 1.3em;
+   font-weight: 900;
+   border: none;
+   border-radius: 20px;
+
+}
 input[type="text"]:focus{
     outline: none;
 }
