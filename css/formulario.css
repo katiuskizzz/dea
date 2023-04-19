@@ -1,0 +1,25 @@
+*{
+    font-family: Tahoma, sans-serif;
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+form {
+    border: 1px solid rgb(255, 0, 0);
+    width: 600px;
+}
+.form-tittle{
+    width: 602px;
+    height: 80px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+label{
+    display: block;
+}
+input[type="text"]{
+    display: block;
+}
