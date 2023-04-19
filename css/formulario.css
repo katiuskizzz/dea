@@ -37,11 +37,15 @@ label{
 }
 input[type="text"]{
     display: block;
+    margin-top: 10px;
     margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1px solid rgb(64, 64, 64);
+
 }
 label {
     margin-top: 20px;
 }
-input[type="submit"]{
-    margin-top: 20px;
+input[type="text"]:focus{
+    outline: none;
 }
