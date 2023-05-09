@@ -10,7 +10,20 @@
 
 </head>
 <body>
+  
+  
   <h1>Calculadora de facturas</h1>
+  <div class="img-container"> 
+    <img src="./img/zapatos1.jpg">
+    <img src="./img/zapatos1.jpg">
+    <img src="./img/zapatos1.jpg">
+    <img src="./img/zapatos1.jpg">
+    <img src="./img/zapatos1.jpg"></div>
+  
+ 
+  
+  <div class="conteiner1">
+     
   <div>
     <label>Producto 1:</label>
     <select id="productos" onchange="precio1()">
@@ -29,7 +42,9 @@
     <label>Total:</label>
     <span id="total1"></span>
   </div>
-  <div>
+  </div>
+  <div class="conteiner2">
+    <div>
     <label>Producto 2:</label>
     <select id="productos2" onchange="precio2()">
       <option value="180000">Producto D</option>
@@ -46,19 +61,29 @@
     <label>Total:</label>
     <span id="total2"></span>
   </div>
-  <div>
-    
-    <button onclick="limpiarCantidad()">Limpiar Cantidad</button>
   </div>
-  <div>
+
+  <div class="botones">
+     
+
+  <div class="boton2">
     <button onclick="calcular()">Calcular</button>
     
   </div>
-  <div>
+  <div class="boton1">
+    
+    <button onclick="limpiarCantidad()">Limpiar Cantidad</button>
+  </div>
+  <div class="factura">
+
     <h2>Factura</h2>
     <ul id="factura"></ul>
     <button onclick="getFactura()">Generar factura</button>
     <p>Total: <span id="totalAbsoluto"></span></p>
+  </div> 
   </div>
+ 
+ 
+  
 </body>
 </html>
