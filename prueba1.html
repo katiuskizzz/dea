@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de ingreso de datos</title>
+</head>
+<body>
+    <h1>Página de ingreso de datos</h1>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+    <button onclick="guardarDatos()">Guardar</button>
+
+    <script>
+        function guardarDatos() {
+            const nombre = document.getElementById("nombre").value;
+            localStorage.setItem("nombre", nombre);
+            window.location.href = "prueba2.html";
+        }
+    </script>
+</body>
+</html>

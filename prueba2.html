@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otra página</title>
+</head>
+<body>
+    <h1>Otra página</h1>
+
+    <p>Datos ingresados:</p>
+    <p>Nombre: <span id="nombre"></span></p>
+
+    <script>
+        const nombre = localStorage.getItem("nombre");
+        document.getElementById("nombre").textContent = nombre;
+    </script>
+</body>
+</html>

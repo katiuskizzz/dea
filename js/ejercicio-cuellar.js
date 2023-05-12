@@ -1,8 +1,17 @@
+
+window.onload = function( ){
+    cargarData()
+
+}
 const t = document.querySelector("#datoTipo")
 const n = document.querySelector("#datoNumero")
 
+
+
 function almacenarDatos(){
-    let tip,num 
+    let tip = document.getElementById("tipo").value;
+    let num = document.getElementById("numero").value;
+
     tip = document.getElementById("tipo").value
     num = document.getElementById("numero").value
 

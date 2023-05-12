@@ -1,0 +1,23 @@
+.estilo{
+    justify-content: center;
+    text-align: center;
+    margin: 1px;
+    background-color: rgb(238, 200, 200);
+    width: 500px;
+    margin-left: 35%;
+    margin-top: 20px;
+   
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(224, 178, 178);
+    text-align: center  ;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}

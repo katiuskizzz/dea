@@ -1,0 +1,40 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.estilo{
+    background-color:  rgb(238, 200, 200);
+    padding: 15px 20px;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 35%;
+    margin: 2px solid black;
+}
+input{
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    margin-bottom: 15px;
+}
+button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: red;
+    
+    background-color: rgb(255, 255, 255);
+}
+body{
+    background-color: rgb(223, 223, 223);
+}
+.m{
+    margin: 1px solid black;
+}
+.hr{ 
+    background-color: rgb(196, 132, 132);
+
+}
+
+

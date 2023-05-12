@@ -1,4 +1,5 @@
 
+
 const p = document.querySelector("#datoProduccion")
 const l = document.querySelector("#datoLinea")
 const v = document.querySelector("#datoVersion")
@@ -29,4 +30,21 @@ function almacenarData(){
     document.getElementById("versionac").value = "";
     document.getElementById("modulo").value = "";
 
+}
+
+function cargarData(){
+    let producto,linea,version, versionac, modulo
+    producto = localStorage.getItem("Producto");
+    linea = localStorage.getItem("Linea");
+    version = localStorage.getItem("Version");
+    versionac = localStorage.getItem("Versionac");
+    modulo = localStorage.getItem("Modulo");
+    
+
+    
+    p.innerHTML = producto;
+    l.innerHTML = linea;
+    v.innerHTML = version;
+    va.innerHTML = versionac;
+    m.innerHTML = modulo;
 }
