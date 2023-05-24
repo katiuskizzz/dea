@@ -6,21 +6,65 @@
 nav{
     background-color: rgb(86, 161, 158);
     font-size: 1.2rem;
+    width: 100%;
 }
-ul{
-    height: 70%;
+nav, ul{
+    width: 100%;
     text-align: left;
-    margin-left: 50px ;
+    position: absolute;
     list-style: none;
+    left: 0;
+    background-color: rgb(86, 161, 158);
     
 }
-li {
-    margin: 20px 25px;
+/*primer menu*/
+
+.first-item{
+    margin-left: 50px;
+}
+nav > ul > li {
     display: inline-block;
+    width: 250px;
+    line-height: 70px;
+    text-align: center;
    
+}
+nav > ul > li:hover{
+    background-color: rgb(73, 128, 126);
+    cursor: pointer;
+
+    
 }
 
 a{
     text-decoration: none;
     color: white;
+}
+ul li {
+    position: relative;
+}
+/*segundo nivel ¨*/
+/*ocultar las opciones*/
+nav li li {
+   max-height: 0;
+   overflow: hidden;
+}
+/*mostrar las opciones*/
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+    text-align: center;
+    border-right: 1px solid  rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245);
+
+}
+nav li > ul > li:hover{
+    background-color: rgb(73, 128, 126);
+    cursor: pointer;
+
+}
+/*tercer menú*/
+nav ul ul ul{
+    left: 100%;
+    top: 0;
 }
