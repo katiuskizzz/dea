@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, sans-serif;
+}
+nav{
+    background-color: rgb(86, 161, 158);
+    font-size: 1.2rem;
+}
+ul{
+    height: 70%;
+    text-align: left;
+    margin-left: 50px ;
+    list-style: none;
+    
+}
+li {
+    margin: 20px 25px;
+    display: inline-block;
+   
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

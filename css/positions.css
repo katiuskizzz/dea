@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(75, 102, 122);
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.box-static{
+    position: static;
+}
+.box-absolute{
+    background-color: rgb(122, 122, 172);
+    position: absolute; 
+    bottom: 100px;
+    left: -200px;
+}
+.box-fixed{
+    position: fixed;
+    background-color: blue;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+
+}
