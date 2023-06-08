@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, sans-serif;
+}
+
+.container-long{
+    background-color: rgb(240, 201, 110);
+    height: 62px;
+    width: 122px;
+    position: relative;
+    border-radius: 29px;
+    margin: 10%;
+    border: 1px solid black;
+    transition: 1.5s;
+    
+    
+}
+
+
+.container-boll{
+    background-color: rgb(222, 166, 140);
+    height: 56px;
+    width: 60px;
+    top: 1px;
+    margin: 1%;
+    border-radius: 90px;
+    transition: 1s;
+    position: relative;
+    border: 1px solid black;
+}
+.container-boll:hover{
+    background-color: rgb(249, 239, 239);
+    cursor: pointer;
+    transform: translate(58px, 1%);
+    position: absolute;
+
+    
+   
+}
+.container-long:hover{
+    background-color: rgb(35, 32, 43);
+    cursor: pointer;
+
+}
+@media only screen and (max-width: 768px){
+    .bolasM{
+
+        position: relative;
+    }
+}

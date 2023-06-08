@@ -1,0 +1,65 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.toogle-box{
+    width: 220px;
+    height: 120px;
+    background-color: rgb(163, 65, 167);
+    border-radius: 55px;
+    transition: background-color 400ms;
+}
+.choice-box{
+    position: relative;
+    width: 110PX;
+    height: 110px;
+    left: 5px;
+    top: -39px;
+    border-radius: 55px;
+    background-color: rgb(207, 147, 147);
+    transition: 1.5s;
+}
+
+
+
+.toogle-box:hover {
+    cursor: pointer;
+    background-color: rgb(146, 37, 150);
+    
+}
+.toogle-box:hover > .choice-box {
+    position: relative;
+    width: 110PX;
+    height: 110px;
+    left: 100px;
+    top: -38px;
+    border-radius: 55px;
+    background-color: rgb(207, 147, 147);
+}
+/*bolita*/
+.choice-box:hover {
+    cursor: pointer;
+    background-color:  rgb(200, 126, 126);
+    transform: translate(100px, 50px);
+    position: absolute;
+}
+
+.text-on-off {
+font-size: 2em;   
+font-weight: 900;
+color: white;
+}
+
+.text-off {
+    position: relative;
+    top: 35px;
+    left: 105px;
+    
+}
+.text-on {
+    position: relative;
+    top: 35px;
+    left: 30px;
+    
+}
+
+
