@@ -1,0 +1,26 @@
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+.box{
+    width: 100%;
+    background-color: darkcyan;
+}
+.box-1{
+    
+    display: flex;
+    flex-direction: row;
+}
+/*colum- columna-vertical   row-horizontal*/
+.box2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.box-gen {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-color: goldenrod;
+}
