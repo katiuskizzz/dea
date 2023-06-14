@@ -5,6 +5,7 @@
     border-radius: 55px;
     padding: 3px;
     transition: all 1s;
+    border: 1px solid black;
 }
 .contenedor1-on {
     width: 250px;
@@ -24,6 +25,7 @@
     left: 5px;
     border-radius: 50%;
     transition: all 1s;
+    border: 1px solid black;
 }
 .contenedor2-on {
     position: relative;
