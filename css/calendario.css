@@ -13,14 +13,7 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
-.contenedor {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px 20px;
-    justify-items: center;
-    background-color: white;
-    border: 1px solid firebrick;
-}
+
 .box {
     display: flex;
     justify-content: center;
@@ -28,9 +21,9 @@ body {
     background-color: rgba(0, 0, 0, 0.399);
     border: 1px solid white;
     color: white;
-    font-size: 30px;
-    width: 200px;
-    height: 100px;
+    font-size: 20px;
+    /* width: 200px; */
+    /* height: 100px; */
 }
 .dia {
     background-color: rgba(219, 111, 111, 0.924);
@@ -39,8 +32,8 @@ body {
     background-color: rgba(226, 143, 127, 0.839);
 }
 .eventos {
-    font-size: 23px;
-    margin-left: 10px;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 
@@ -49,8 +42,8 @@ body {
     height: 100vh;
     display: grid;
     border: firebrick;
-    grid-template-columns:  repeat(7,200px) ;
-    grid-template-rows:  repeat(6,100px)  ;
+    grid-template-columns:  repeat(7,100px) ;
+    grid-template-rows:  repeat(7,70px)  ;
     grid-gap: 10px 20px;
     align-content: center;
     justify-content: center;
@@ -69,24 +62,18 @@ body {
     background-color: rgba(226, 143, 127, 0.839);
     color: white;
 }
-.box{
-background-color: rgba(0, 0, 0, 0.399);
-border: 1px solid  white;
-color: white;
-font-size: 30px;
 
-}
 .eventos{
-    font-size: 23px;
-    margin-left: 48px;
+    font-size: 15px;
+    /* margin-left: 48px; */
+    text-align: center;
 
 }
 .mes{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     grid-column-start: 1;
     grid-column-end: 8;
-    background-color: white;
-    border-bottom: 1px solid black;
+    background-color: rgb(237, 226, 226);
     text-align: center;
     font-size: 35px;
 
