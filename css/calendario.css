@@ -7,7 +7,7 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
@@ -17,11 +17,11 @@ body {
 .box {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgba(0, 0, 0, 0.399);
     border: 1px solid white;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     /* width: 200px; */
     /* height: 100px; */
 }
@@ -31,10 +31,7 @@ body {
 .festivo {
     background-color: rgba(226, 143, 127, 0.839);
 }
-.eventos {
-    font-size: 20px;
-    margin-left: 5px;
-}
+
 
 
 .contenedor {
@@ -42,8 +39,8 @@ body {
     height: 100vh;
     display: grid;
     border: firebrick;
-    grid-template-columns:  repeat(7,100px) ;
-    grid-template-rows:  repeat(7,70px)  ;
+    grid-template-columns:  repeat(7,80px) ;
+    grid-template-rows:  repeat(7,50px)  ;
     grid-gap: 10px 20px;
     align-content: center;
     justify-content: center;
@@ -55,7 +52,7 @@ body {
     display: flex ;
     background-color: rgba(219, 111, 111, 0.924) ;
     justify-content: center;
-    align-items: center;
+ 
     color: white;
 }
 .contenedor .festivo{
@@ -64,7 +61,7 @@ body {
 }
 
 .eventos{
-    font-size: 15px;
+    font-size: 13px;
     /* margin-left: 48px; */
     text-align: center;
 
