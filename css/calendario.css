@@ -32,8 +32,6 @@ body {
     background-color: rgba(226, 143, 127, 0.839);
 }
 
-
-
 .contenedor {
     width: 100%;
     height: 100vh;
@@ -42,7 +40,7 @@ body {
     grid-template-columns:  repeat(7,80px) ;
     grid-template-rows:  repeat(7,50px)  ;
     grid-gap: 10px 20px;
-    align-content: center;
+ 
     justify-content: center;
  }
 .contenedor .inicio{

@@ -53,7 +53,7 @@ header{
     gap: 30px;
 
     grid-template: "main-img main-img main-img" 600px
-                    "article-1 article-2 article-3"
+                    "article-1 article-2 article-3" 
                     "article-4 article-5 article-6" /
                     1fr         1fr       1fr    ;
 
@@ -90,4 +90,12 @@ header{
     line-height: 1.4em;
     display: flex;
     justify-content: center;
+}
+@media(min-width: 768px){
+
+}
+@media(min-width: 1024px){
+
+}
+@media(min-width:1200px){
 }
