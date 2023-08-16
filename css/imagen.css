@@ -7,29 +7,56 @@ body{
     width: 100%;
     grid-template: "empty-let     main-page                empty-right" 100vh/
                  minmax(30px,1fr)       minmax(700px,1200px)       minmax(30px,1fr)             ;
-}
-.main-page{
+}.main-page{
     grid-area: main-page;
 }
 header{
     display: grid;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     grid-template:" logo    main-menu"80px/
                     150px       minmax(500px,100%);
 }
 .logo{
     grid-area: logo;
-    background-color: rgba(116, 21, 123, 0.719);
+    background-image: url(../img/gatosa.png);
+    background-color: rgb(227, 225, 217);
     border-radius: 15px;
-    
+    /*   */
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
+
+.box-main-img {
+    width: 100%;
+    background-image: url(../img/hongos.jpg); /* este es sin aumentp vista pc */
+    width: 100%;
+    height: 613px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main-img ;
+    border-radius: 15px;
+    }
+
+@media only screen and (max-width: 430px){
+    .box-main-img{
+        background-image: url(../img/hongos2.jpg); /* este es con aumento vista celuco */
+        width: 100%;
+        height: 350px;
+    }
+}
+
+
+
 .main-menu{
     grid-area: main-menu ;
-    background-color: rgba(150, 80, 188, 0.679);
+    background-color: rgb(20, 20, 24);
     border-radius: 15px;
     
+    font-family: 'Great Vibes', cursive;
+
 }
 .style-text{
     font-family: verdana,sans-serif;
@@ -48,13 +75,10 @@ header{
                      "article-4   article-5    article-6 "450px/
                       1fr            1fr             1fr;
 }
-.main-img{
-    grid-area: main-img ;
-    background-color: rgb(143, 71, 211);
-    border-radius: 15px;
-}
+
 .article-1{
     grid-area: article-1;
+    
 }
 .article-2{
     grid-area: article-2;
@@ -71,14 +95,52 @@ header{
 .article-6{
     grid-area: article-6;
 }
-.img-article {
-    height: 350px;
-    background-color: rgb(66, 66, 66);
+.img-article-1 {
+    margin-top: 18px;
+    height: 400px;
+    background-image: url(../img/silphyoriginal.jpg);
     font-family: verdana, sans-serif;
     color:rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 15px;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+.img-article-2 {
+    margin-top: 18px;
+    height: 400px;
+    background-image: url(../img/ersi.jpg   );
+    font-family: verdana, sans-serif;
+    color:rgb(255, 255, 255);
+    border-radius: 15px;    
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img-article-3 {
+    margin-top: 18px;
+    height: 400px;
+    background-image: url(../img/roxy.jpg   );
+    font-family: verdana, sans-serif;
+    color:rgb(255, 255, 255);
+    border-radius: 15px;    
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+@media only screen and (max-width: 430px){
+    .img-article{
+        background-image: url(../img/imagensilphy2.jpg); /* este es con aumento vista celuco */
+        width: 100%;
+        height: 350px;
+    }
+}
+
 .style-text-article{
     
     padding-top: 35px;
