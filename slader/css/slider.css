@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 95px;
+    width: 100%;
+    z-index: 120;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.965);
+}
+.page-box-slider {
+    width: 100%;
+    overflow: hidden;
+}
+.box-slider {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;/*conservar el tamaño de la imagen por encima del contenido*/
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    transition: left 1200ms;
+    background-color: red;
+}
+.box-slider-1{
+    left: 0;
+}
+.box-slider-2{
+    left: -100%;
+}
+.box-slider-3 {
+    left: -200% ;
+}
+
+.img-slider-1 {
+   height: 100vh;
+}
+.img-slider {
+    width: 100%;
+}
+/*.iconos-chevron{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 30;
+
+}*/
+.box-icon-chevron-left, .box-icon-chevron-right {
+    color: white;
+    font-size: 2.5em;
+    position: relative;
+    top: calc((-100vh) + 500px);
+    z-index: 20;
+    padding: 0 50px;
+}
+    /*colocar elementos encima de otros*/
+
+.box-icon-chevron-right{
+  
+    display: flex;
+    justify-content: flex-end;
+    top: calc((-100vh) + 450px);
+    z-index: 60;
+   
+}
+.box-icon-chevron-left{
+    z-index: 70;
+    width: 120px;
+}
+
+.icon-chevron-right, .icon-chevron-left{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 160px;
+}
+.box-icon:hover{
+    background-color: rgba(255, 255, 255, 0.171);
+  
+}
+.box-box-signal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    z-index: 150;
+}
+.box-signal{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    height: 20px;
+
+}
+
+.signal {
+    width: 120px;
+    height: 20px;
+    padding: 0 25px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 20px ;
+}
+.signal-select {
+    background-color: rgba(85, 121, 197, 0.487);
+   /*  background: linear-gradient(270deg, #cd983e84, #091a4667, #56509a84);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    
+    Por supuesto, te explicaré lo que hace este código CSS:
+
+1. `.signal-select`: Este es el selector de tu elemento HTML al que quieres aplicar el estilo. En este caso, se aplicará a cualquier elemento con la clase `signal-select`.
+
+2. `background: linear-gradient(270deg, #ff0000, #b6bbff, #7694c6);`: Esto aplica un gradiente lineal al fondo del elemento. El gradiente comienza en un ángulo de 270 grados y cambia de color desde `#ff0000` (rojo) a `#b6bbff` (azul claro) y finalmente a `#7694c6` (azul).
+
+3. `background-size: 600% 600%;`: Esto aumenta el tamaño del fondo en un 600% tanto en ancho como en alto. Esto es útil para animaciones de fondo.
+
+4. `-webkit-animation: AnimationName 30s ease infinite; -moz-animation: AnimationName 30s ease infinite; animation: AnimationName 30s ease infinite;`: Estas líneas aplican una animación al fondo del elemento. La animación se llama `AnimationName`, dura 30 segundos, tiene una transición suave (`ease`) y se repite infinitamente (`infinite`). Las tres líneas hacen lo mismo pero para diferentes navegadores (WebKit para Safari y Chrome, Moz para Firefox, y la última para los demás navegadores).
+
+5. `@-webkit-keyframes AnimationName {...} @-moz-keyframes AnimationName {...} @keyframes AnimationName {...}`: Estas son las definiciones de la animación `AnimationName`. Cambian la posición del fondo del elemento de `0% 50%` a `100% 50%` y de vuelta a `0% 50%`, creando un efecto de movimiento.
+
+Espero que esto te ayude a entender mejor tu código CSS. ¿Hay algo más con lo que pueda asistirte?*/
+}  
+
+
+
+
+
+
+
+
+
+
+
+/* .icon-chevron-left{
+    left: 5%;
+
+}
+.icon-chevron-right{
+    position: relative;
+    margin: 100px;
+
+} */
