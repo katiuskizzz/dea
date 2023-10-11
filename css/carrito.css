@@ -26,45 +26,97 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(247, 219, 8);
+    background-color: #ffdf00;
     border-radius: 10px;
     margin: 0 20px 20px 20px;
     font-size: 1.4em;
 }
-#numeroProductos{
+#numeroProductos,   #panumeroProductos{
     font-weight: 500;
     font-size: 1.1em;
+    
 }
 .product-content{
     display: grid;
-    grid-template: "empty-left box-img-producto box-info-producto empty-right"/
+    grid-template: "empty-left box-img-producto box-info-producto empty-right" 
+                   "empty-left box-buttons-cantidad box-info-producto empty-right" /
                     20px        2fr                 3fr              20px ;
 
 }
 .box-img-producto{
     grid-area: box-img-producto;
+   
     /* background-color: red; */
 }
 .box-info-producto{
     grid-area: box-info-producto;
-   
+    line-height: 1.8em;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 0 25px;
+    
     /* background-color: green; */
 }
+.book-title{
+    font-size:1.9em ;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.book-description{
+    font-size:1.5em ;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+.book-autor{
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.cover-type{
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.info-precio{
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.precio-unidad, .signo-precio-unidad{
+    font-size: 1.5em;
+    font-weight: 700;
+}
 .box-buttons-cantidad{
+    grid-area: box-buttons-cantidad;
     font-size: 1.3em;
     display: flex;
     flex-direction: row;
-    padding: 10px 50px;
-   
-   
+    margin-top: 5px;
+    padding-left: 35px;
+
     
 }
+.box-minus{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgba(216, 216, 216, 0.541);
+
+}
+.box-plus{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;   
+    background-color: rgba(216, 216, 216, 0.541);   
+   
+}
+
 .box-minus, .box-cant,.box-plus{
     width: 60px;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(24, 24, 24);
+    font-weight: 600;
 
 }
