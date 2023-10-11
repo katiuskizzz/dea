@@ -43,17 +43,20 @@
 }
 .box-img-producto{
     grid-area: box-img-producto;
-    background-color: red;
+    /* background-color: red; */
 }
 .box-info-producto{
     grid-area: box-info-producto;
    
-    background-color: green;
+    /* background-color: green; */
 }
 .box-buttons-cantidad{
     font-size: 1.3em;
     display: flex;
     flex-direction: row;
+    padding: 10px 50px;
+   
+   
     
 }
 .box-minus, .box-cant,.box-plus{
