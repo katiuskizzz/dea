@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: verdana,arial,helvetica,sans-serif;
+
 }
 header {
     /* background-color: rgb(35,47,62);  */
@@ -14,6 +15,51 @@ header {
     grid-template: "header-logo header-enviar-a box-header-search-input header-flag-country header-identificate header-devoluciones header-carrito" 60px /
                          150px        110px           1fr                    70px                160px               120px               140px;     
 }
+.main-bottom{
+    background-color: rgb(35,47,62) ;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    color: white;
+    font-size: 0.7em;
+    
+
+    grid-template: " box-menu  box-todos box-ofertasdia box-servicio-cliente box-listas box-tarjetas-regalo box-vender" 60px/
+                        50px      40px          100px             120px             50px        105px             160px ;
+
+}
+.box-menu{
+    grid-area: box-menu;
+    color: white;
+    padding: 5px 10px 1px 10px;
+    font-size: 0.7em;
+}
+.box-todos{
+    grid-area: box-todos;
+    padding: 15px 1px 1px 3px;
+   
+}
+.box-ofertasdia{
+    grid-area: box-ofertasdia;
+    padding: 15px 1px 1px 3px;
+}
+.box-servicio-cliente{
+    grid-area: box-servicio-cliente;
+    padding: 15px 1px 1px 3px;
+}
+.box-listas {
+    grid-area: box-listas ;
+    padding: 15px 1px 1px 3px;
+}
+.box-tarjetas-regalo{
+    grid-area: box-tarjetas-regalo;
+    padding: 15px 1px 1px 3px;
+}
+.box-vender{
+    grid-area: box-vender;
+    padding: 15px 1px 1px 3px;
+}
+
 .header-logo {
     grid-area: header-logo;
     display: flex;
@@ -78,8 +124,8 @@ header {
 .box-filtro-todos {
     grid-area: box-filtro-todos;
     background-color: rgb(230,230,230);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .filtro-todos {
     display: flex;
@@ -114,8 +160,8 @@ header {
 .box-lupa {
     height: 40px;
     background-color: rgb(254,189,105);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +188,8 @@ header {
 .idioma{
     color: white;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.9em;
+    padding: 2px;
 }
 .icon-chevron2{
     color: white;
@@ -179,26 +226,94 @@ header {
     grid-area: header-carrito;
     color: white;
     position: relative;   
-    top: 20px;
+    top: 17px;
+   
      
 }
 .icon-carrito{
-    font-size: 1.2em;
-
-  
-   
+    font-size: 1.2em;   
+    
 }
 .text-carrito{
     font-size: .8em;
     font-weight: 600;
+   
 }
 
 
+.box-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0,.5 );
+    z-index: 10;
+   
+
+}
+.modal {
+    width: 95%;
+    height: 80%;
+    z-index: 20;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    grid-template: "box-main-img-modal info-modal"/
+                            1fr     350px ;
+}
+
+.btn-close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.3em;
+    border: 2px solid rgba(44, 164, 224, 0.3);
+    border-radius: 6px;
+    /* box-shadow: 1px 1px 5px rgba(22, 247, 191, 0.25); */
+    padding: 0 5px;
+    line-height: 0.8em;
+}
 
 
+.box-main-img-modal{
+    grid-area: box-main-img-modal;
+    /* background-color: goldenrod; */
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.main-img-modal{
+   width: 70%;
+   height: auto;
 
+    
 
+}
+.info-modal{
+    grid-area: info-modal;
+    padding: 30px 60px 30px 30px;
+}
+.txt-caracteristicas-modal{
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1em;
+    font-weight: 50;
+
+}
+.txt-estilo-caracteristicas{
+    font-size: .9em;
+    color: rgba(0, 0, 0, 0.367);
+    margin-top: 15px;
+}
 
 
 
