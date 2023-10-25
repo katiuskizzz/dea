@@ -176,11 +176,19 @@ header {
 .header-carrito {
     grid-area: header-carrito;
     color: white;
-   
+    position: relative;   
+    top: 20px;
+     
 }
 .icon-carrito{
-    font-size: 1.9em;
+    font-size: 1.2em;
+
+  
    
+}
+.text-carrito{
+    font-size: .8em;
+    font-weight: 600;
 }
 
 
