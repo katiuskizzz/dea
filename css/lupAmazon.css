@@ -9,7 +9,7 @@ header {
     /* background-color: rgb(35,47,62);  */
     background-color: rgb(19,25,33);
     width: 100%;
-    height: 60px;
+    height: 68px;
     display: grid;
     grid-template: "header-logo header-enviar-a box-header-search-input header-flag-country header-identificate header-devoluciones header-carrito" 60px /
                          150px        110px           1fr                    70px                160px               120px               140px;     
