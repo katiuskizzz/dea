@@ -6,7 +6,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
-    background-color: rgb(35,47,62); 
+    /* background-color: rgb(35,47,62);  */
+    background-color: rgb(19,25,33);
     width: 100%;
     height: 60px;
     display: grid;
