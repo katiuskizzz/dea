@@ -23,9 +23,10 @@ header {
     height: 70px;
 }
 .img-main-logo {
-    width: 90%;
+    width: 80%;
     color: white;
-    padding-left: 15px;
+    align-items: center;
+
 }
 .header-enviar-a {
     grid-area: header-enviar-a;
