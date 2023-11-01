@@ -239,34 +239,40 @@ header {
     font-weight: 600;
    
 }
+.containtp{
+    padding: 100px;
+    width: 30px;
+    height: 30px;
+}
 
-
-.box-modal{
+.box-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0,.5 );
-    z-index: 10;
-   
+    z-index: 20;
 
 }
+
 .modal {
     width: 95%;
-    height: 80%;
-    z-index: 20;
-    background-color: white;
-    border-radius: 10px;
+    height: 87%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    padding: 20px;
     position: relative;
     display: grid;
-    grid-template: "box-main-img-modal info-modal"/
-                            1fr     350px ;
-}
+    grid-template: "box-main-img-modal  info-modal" /
+        1fr 350px;
 
+}
 .btn-close{
     position: absolute;
     top: 5px;
@@ -313,11 +319,68 @@ header {
     font-size: .9em;
     color: rgba(0, 0, 0, 0.367);
     margin-top: 15px;
+    margin-bottom: 20px;
+}
+.box-modal-img {
+    position: relative;
+    width: 97%;
+    height: 50%;
+    margin-top: 10px;
+    display: grid;
+
+    grid-template: "box-img-1 box-img-2 box-img-3 box-img-4 " 70px
+                     "box-img-5 box-img-6  box-img-7 box-img-8" 70px/
+                      73px      73px 73px 73px;
 }
 
+.box-modal-img>.img {
+    display: flex;
+    justify-content: center;
 
+}
 
+.box-img-1 {
+    grid-area: box-img-1;
+}
 
+.box-img-2 {
+    grid-area: box-img-2;
+}
+
+.box-img-3 {
+    grid-area: box-img-3;
+}
+
+.box-img-4 {
+    grid-area: box-img-4;
+}
+
+.box-img-5 {
+    grid-area: box-img-5;
+}
+
+.box-img-6 {
+    grid-area: box-img-6;
+}
+
+.box-img-7 {
+    grid-area: box-img-7;
+}
+
+.box-img-8 {
+    grid-area: box-img-8;
+}
+
+.img {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 2px solid grey;
+} 
+.img:hover{
+    cursor: pointer;
+    border: 2px solid rgb(0, 75,145);
+}
 
 
 
