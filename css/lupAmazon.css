@@ -240,87 +240,104 @@ header {
    
 }
 .containt-interfaz{
-    margin-left: 3%;
-    margin-top: 115px;
+    margin-top: 60px;
     height: 100%;
+    background-color: blue;
     width: 100%;
     display: grid;
-    grid-template: "containt-products containtp imagen1" 100% /
-                   10%              1fr       1fr      ;
-}   
 
-.containt-products{
-  
-    grid-area: containt-products;
-    width: auto;
-    height: auto;
+    justify-content: center;
+    grid-template: " containtp imagen1 descripcionp informacioncarro" 100% /
+                     220px       800px    490px         500px;
+}   
+.descripcionp{
+    grid-area: descripcionp;
+    background-color: green;
     display: grid;
+    grid-template: "descripcionpc"30%
+                "  despcripcioncosto" 10%/
+                      490px              ;
+}
+.descripcionpc{
+    grid-area:descripcionpc ;
+    background-color: tomato  ;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    z-index: 20;
+}
+.despcripcioncosto{
+    padding-top: 10px;
+    background-color: rgb(170, 238, 215);
+   
+    
+}
+.containt-products{
+   
+    display: grid;
+
+    grid-template-columns: "mini-containts" 10px/
+                                1px;
     /* background-color: violet; */
-    grid-template:"mini-containts" 100%/
-                            100%;
+   
 }
 .mini-containts{
-    grid-area:  mini-containts;
     /* background-color: blue; */
-    margin-left: 90px;
-    
-    
-    grid-template-columns: "mini-containts-1 mini-containts-2 mini-containts-3" 60px
-                            "mini-containts-4 mini-containts-5 mini-containts-6 "60px
-                            "mini-containts-7 mini-containts-8 mini-containts-1" 60px /
-                                    10px        10px            10px;
+    display: grid;
+    margin-top: 10px    ;
+    margin-left: 150px;    
+    width: 45px;
+    height: 45px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 10px;
+    grid-template: "mini-containts-1 mini-containts-2 mini-containts-3" 4px
+                    "mini-containts-4 mini-containts-5 mini-containts-6 "4px
+                    "mini-containts-7 mini-containts-8 mini-containts-8" 4px /
+                             20px        20px            20px;
 }
 .mini-containts-1{
- 
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    border: 1px solid grey;
-    border-radius: 10px;
-   margin: 10px;
-    
+    grid-area: mini-containts-1;
 }
 .mini-containts-2{
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin: 10px;
+    grid-area: mini-containts-2;
+    
 }
 .mini-containts-3{
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin: 10px;
+    grid-area: mini-containts-3;
 }
 .mini-containts-4{
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin: 10px;
+    grid-area: mini-containts-4;
 }
 .mini-containts-5{
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin: 10px;
-
+    grid-area: mini-containts-5;
+}
+.mini-containts-6{
+    grid-area: mini-containts-6;
+}
+.mini-containts:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(200,243 ,250,0.100 );
 }
 
 .imgi{
-    width: 50px;
-    height: 40px;
-    margin: 8px 3px 7px 4px;
+    width: 30px;
+    height: 20px;
+    margin: 12px 3px 7px 7px;
+
 }
 
+.bos-estrellas{
+    display: flex;
+    flex-direction: row;
 
+}
+.estrella{
+    cursor: pointer;
+    color: burlywood;
+    font-size: 15px;
+
+}
 
 
 .containtp{
@@ -329,7 +346,7 @@ header {
 
     width: 675px;
     background-color: white;
-    border: 1px solid rgb(255, 0, 0);
+    /* border: 1px solid rgb(255, 0, 0); */
     height: 682px;
     display: grid;  
     justify-content: center;
@@ -341,14 +358,17 @@ header {
 
 .imagen1{
     grid-area: imagen1;
-    width: 98%; 
+    width: 99%; 
     height: auto;
       
     /* margin: 30px 5px 20px 5px;  */
              /* top derecha abajo izquiersda */
-    
 }
+#imagen1 {
+    transition: transform 0.3s ease-in-out;
+    max-width: 99%;
 
+  }
 
 
 
