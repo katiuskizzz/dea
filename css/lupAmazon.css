@@ -263,14 +263,64 @@ header {
     grid-area:  mini-containts;
     /* background-color: blue; */
     margin-left: 90px;
-    grid-template-columns: "mini-containts-1 mini-containts-2 mini-containts-3"
-                            "mini-containts-4 mini-containts-5 mini-containts-6 "
-                            "mini-containts-7 mini-containts-8 mini-containts-1" /
+    
+    
+    grid-template-columns: "mini-containts-1 mini-containts-2 mini-containts-3" 60px
+                            "mini-containts-4 mini-containts-5 mini-containts-6 "60px
+                            "mini-containts-7 mini-containts-8 mini-containts-1" 60px /
                                     10px        10px            10px;
 }
 .mini-containts-1{
-    grid-area: mini-containts-1;
+ 
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 10px;
+   margin: 10px;
+    
 }
+.mini-containts-2{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+.mini-containts-3{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+.mini-containts-4{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+.mini-containts-5{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.imgi{
+    width: 50px;
+    height: 40px;
+    margin: 8px 3px 7px 4px;
+}
+
+
 
 
 .containtp{
