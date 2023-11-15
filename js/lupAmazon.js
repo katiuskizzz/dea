@@ -1,13 +1,28 @@
 let btnClose = document.getElementById("btnClose")
 let mainContent = document.getElementById("mainContent")
+let boxModal = document.getElementById("boxModal")
+let containtP = document.getElementById("containtP")
 
 
+
+containtP.addEventListener('click', function(){
+    //con el flex mejore lo de que no se cierre con un hjo
+    boxModal.style.display = "flex";
+    mainContent.style.display = "block";
+})
 
 // Event Listener for the close button
 btnClose.addEventListener('click', function(){
     mainContent.style.display = "none";
     });
 
+
+mainContent.addEventListener('click', function(event){
+    if(event.target === boxModal){
+        boxModal.style.display = 'none'
+    }
+   
+})
 
 let boxImg1 = document.getElementById("boxImg1")
 let boxImg2 = document.getElementById("boxImg2")

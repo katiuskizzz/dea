@@ -239,11 +239,69 @@ header {
     font-weight: 600;
    
 }
-.containtp{
-    padding: 100px;
-    width: 30px;
-    height: 30px;
+.containt-interfaz{
+    margin-left: 3%;
+    margin-top: 115px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: "containt-products containtp imagen1" 100% /
+                   10%              1fr       1fr      ;
+}   
+
+.containt-products{
+  
+    grid-area: containt-products;
+    width: auto;
+    height: auto;
+    display: grid;
+    background-color: violet;
+    grid-template:"mini-containts" 100%/
+                            100%;
 }
+.mini-containts{
+    grid-area:  mini-containts;
+    background-color: blue;
+    margin-left: 90px;
+    grid-template-columns: "mini-containts-1 mini-containts-2 mini-containts-3"
+                            "mini-containts-4 mini-containts-5 mini-containts-6 "
+                            "mini-containts-7 mini-containts-8 mini-containts-1" /
+                                    10px        10px            10px;
+}
+.mini-containts-1{
+    grid-area: mini-containts-1;
+}
+
+
+.containtp{
+    
+    /* margin: 100px 315px; */
+
+    width: 675px;
+    background-color: white;
+    border: 1px solid rgb(255, 0, 0);
+    height: 682px;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.containtp:hover{
+    cursor: pointer;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    width: 98%; 
+    height: auto;
+      
+    /* margin: 30px 5px 20px 5px;  */
+             /* top derecha abajo izquiersda */
+    
+}
+
+
+
+
 
 .box-modal {
     position: fixed;
@@ -382,7 +440,9 @@ header {
     border: 2px solid rgb(0, 75,145);
 }
 
-
+#mainContent {
+    display: none;
+  }
 
 
 
