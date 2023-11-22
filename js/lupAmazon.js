@@ -146,44 +146,48 @@ mainContent.addEventListener('click', function(event){
 })
 //estreallas 
 
-let star1 = document.getElementById("star1");
-let star2 = document.getElementById("star1");
-let star3 = document.getElementById("star1");
-let star4 = document.getElementById("star1");
-let star5 = document.getElementById("star1");
-let calificacion = 4.5;
+// let star1 = document.getElementById("star1");
+// let star2 = document.getElementById("star2");
+// let star3 = document.getElementById("star3");
+// let star4 = document.getElementById("star4");
+// let star5 = document.getElementById("star5");
+// let calificacion = 4.5;
 
 let puntuacion = document.getElementById("calificacion").ariaValueMax;
-if(puntuacion >= 0 && puntuacion <= 0.2){
-    star1.setAttribute("class","fa-regular fa-star");
-    star2.setAttribute("class","fa-regular fa-star");
-    star3.setAttribute("class","fa-regular fa-star");
-    star4.setAttribute("class","fa-regular fa-star");
-    star5.setAttribute("class","fa-regular fa-star");
-}
-else if(puntuacion >= 0.3 && puntuacion <= 0.7){
-    star1.setAttribute("class","fa-regular fa-star-half-stroke");
-    star2.setAttribute("class","fa-regular fa-star");
-    star3.setAttribute("class","fa-regular fa-star");
-    star4.setAttribute("class","fa-regular fa-star");
-    star5.setAttribute("class","fa-regular fa-star");
-}
+var ratingGroup = document.getElementById('half-stars-example');    
+    var ratingInputs = ratingGroup.querySelectorAll('input[type="radio"]');
+    var ratingLabels = ratingGroup.querySelectorAll('.rating__label');
+    var result = document.querySelector("#current-rating")
 
-else if(puntuacion >= 0.8 && puntuacion <= 1.2){
-    star1.setAttribute("class","fa-regular fa-star-half-stroke");
-    star2.setAttribute("class","fa-regular fa-star-half-stroke");
-    star3.setAttribute("class","fa-regular fa-star");
-    star4.setAttribute("class","fa-regular fa-star");
-    star5.setAttribute("class","fa-regular fa-star");
-}
-else if(puntuacion >= 1.3 && puntuacion <= 1.7  ){
-    star1.setAttribute("class","fa-regular fa-star-half-stroke");
-    star2.setAttribute("class","fa-regular fa-star-half-stroke");
-    star3.setAttribute("class","fa-regular fa-star");
-    star4.setAttribute("class","fa-regular fa-star");
-    star5.setAttribute("class","fa-regular fa-star");
-}
+    let selectedRating = 3.5;
 
+    ratingInputs.forEach((input) => {
+        input.addEventListener('change', (event) => {
+            selectedRating = parseFloat(event.target.value);
+            updateRatingDisplay();
+        });
+    });
+
+    ratingLabels.forEach((label) => {
+        label.addEventListener('click', (event) => {
+            var labelValue = parseFloat(event.target.getAttribute('for').split('-')[1]);
+            updateRatingDisplay(labelValue);
+        });
+
+        label.addEventListener('mouseout', () => {
+            updateRatingDisplay();
+        });
+    });
+
+    function updateRatingDisplay(ratingValue = selectedRating) {
+        var ratingDisplay = document.getElementById('rating-display');
+        if (!ratingDisplay) {
+            ratingDisplay = document.createElement('p');
+            ratingDisplay.id = 'rating-display';
+            ratingGroup.parentNode.appendChild(ratingDisplay);
+        }
+        result.textContent = ratingValue
+    }
 
 
 
