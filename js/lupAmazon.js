@@ -144,56 +144,64 @@ mainContent.addEventListener('click', function(event){
     }
    
 })
-//estreallas 
+/*estreallas 
+ let star1 = document.getElementById("star1");
+ let star2 = document.getElementById("star2");
+ let star3 = document.getElementById("star3");
+ let star4 = document.getElementById("star4");
+ let star5 = document.getElementById("star5");
+ let calificacion = 4.5;*/
 
-// let star1 = document.getElementById("star1");
-// let star2 = document.getElementById("star2");
-// let star3 = document.getElementById("star3");
-// let star4 = document.getElementById("star4");
-// let star5 = document.getElementById("star5");
-// let calificacion = 4.5;
 
-let puntuacion = document.getElementById("calificacion").ariaValueMax;
-var ratingGroup = document.getElementById('half-stars-example');    
-    var ratingInputs = ratingGroup.querySelectorAll('input[type="radio"]');
-    var ratingLabels = ratingGroup.querySelectorAll('.rating__label');
-    var result = document.querySelector("#current-rating")
+var ratingGroup = document.getElementById('half-stars-example');
+var ratingInputs = ratingGroup.querySelectorAll('input[type="radio"]');
+var ratingLabels = ratingGroup.querySelectorAll('.rating__label');
+var result = document.querySelector("#current-rating")
 
-    let selectedRating = 3.5;
+let selectedRating = 2.5;
 
-    ratingInputs.forEach((input) => {
-        input.addEventListener('change', (event) => {
-            selectedRating = parseFloat(event.target.value);
-            updateRatingDisplay();
-        });
+ratingInputs.forEach((input) => {
+    input.addEventListener('change', (event) => {
+        selectedRating = parseFloat(event.target.value);
+        updateRatingDisplay();
+    });
+});
+
+ratingLabels.forEach((label) => {
+    label.addEventListener('mouseover', (event) => {
+        var labelValue = parseFloat(event.target.getAttribute('for').split('-')[1]);
+        updateRatingDisplay(labelValue);
     });
 
-    ratingLabels.forEach((label) => {
-        label.addEventListener('click', (event) => {
-            var labelValue = parseFloat(event.target.getAttribute('for').split('-')[1]);
-            updateRatingDisplay(labelValue);
-        });
-
-        label.addEventListener('mouseout', () => {
-            updateRatingDisplay();
-        });
+    label.addEventListener('mouseout', () => {
+        updateRatingDisplay();
     });
+});
 
-    function updateRatingDisplay(ratingValue = selectedRating) {
-        var ratingDisplay = document.getElementById('rating-display');
-        if (!ratingDisplay) {
-            ratingDisplay = document.createElement('p');
-            ratingDisplay.id = 'rating-display';
-            ratingGroup.parentNode.appendChild(ratingDisplay);
-        }
-        result.textContent = ratingValue
+function updateRatingDisplay(ratingValue = selectedRating) {
+    var ratingDisplay = document.getElementById('rating-display');
+    if (!ratingDisplay) {
+        ratingDisplay = document.createElement('p');
+        ratingDisplay.id = 'rating-display';
+        ratingGroup.parentNode.appendChild(ratingDisplay);
     }
+    result.textContent = ratingValue
+}
 
 
 
 
 
+/*eso de la estrella*/
 
+let pantallaestrella = document.getElementById("pantallaestrella")
+
+ratingGroup.addEventListener("click", function(event){
+    if(event.target === pantallaestrella){
+        pantallaestrella.style.display = 'none'
+    }
+   
+})
 
 //pantalla que se llama al darle click a la imagen principal con sus hijos
 let boxImg1 = document.getElementById("boxImg1")

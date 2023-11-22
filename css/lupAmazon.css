@@ -512,9 +512,12 @@ header {
 #mainContent {
     display: none;
   }
+
+
   #half-stars-example {
     .rating-group {
         display: inline-flex;
+        height: 20px;
     }
     .rating__icon {
         pointer-events: none;
@@ -525,12 +528,12 @@ header {
     }
     .rating__label {
         cursor: pointer;
-        padding: 0 0.2em;
+        padding: 0 0.3em;
         font-size: 1rem;
     }
     .rating__label--half {
         padding-right: 0;
-        margin-right: -1.3em;
+        margin-right: -1.4em;
         z-index: 2;
     }
     .rating__icon--star {
@@ -561,7 +564,29 @@ header {
         color: red;
     }
 }
+/* .main-estrellas{
+    display: grid;
+    background-color: blue;
+    grid-template: "visita  estrellas1 oferta-black descuento  " 70px/
+                        100px       90px    200p;
+} */
+.text_azul{
+    color: #007185;
+    font-size: 12px;
+}
 
+/* hr {
+    height: 2px;
+    background-color: black;
+    margin-top: -107px;
+ 
+  } */
+.pantallaestrella{
+    display: grid;
+    background-color: blueviolet;
+    position: relative;
+  
+}
 
 
 
